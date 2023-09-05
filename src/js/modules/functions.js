@@ -28,3 +28,15 @@ if(nav_menu.classList.contains('active')){
         nav_menu.classList.remove('active');
     });
 };
+
+//аккордеон
+
+const tubs = document.querySelectorAll('.faq__item');
+tubs.forEach((el) => {
+    el.addEventListener('click', function() {
+        tubs.forEach((i) =>{
+            i.classList.remove('active');
+        });
+        el.classList.toggle('active');
+    });
+});

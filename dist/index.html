@@ -11,7 +11,8 @@
 
 
 <body>
-    <header class="header">
+    <a href="#top-nav" class="top-btn"><img src="img/icons/top-btn.png" alt=""></a>
+    <header id="top-nav" class="header">
     <div class="header__green">
         <div class="container">
             <div class="header__top">
@@ -44,12 +45,12 @@
         <div class="container">
             <nav>
                 <ul>
-                    <li><a href="#">Виды работ</a></li>
-                    <li><a href="#">Наши преимущества</a></li>
-                    <li><a href="#">Примеры работ</a></li>
-                    <li><a href="#">Процесс</a></li>
-                    <li><a href="#">Отзывы</a></li>
-                    <li><a href="#">Вопросы</a></li>
+                    <li><a href="#types">Виды работ</a></li>
+                    <li><a href="#advantages">Наши преимущества</a></li>
+                    <li><a href="#works">Примеры работ</a></li>
+                    <li><a href="#stage">Процесс</a></li>
+                    <li><a href="#comments">Отзывы</a></li>
+                    <li><a href="#faq">Вопросы</a></li>
                     <li class="mobil-tel"><a href="tel:+89127832247">+8 912 783 22 47</a></li>
                 </ul>
             </nav>
@@ -57,7 +58,7 @@
     </div>
 </header>
     <main>
-        <section class="offer" style="background-image: url(img/offer-bg.jpg);">
+        <section id="offer" class="offer" style="background-image: url(img/offer-bg.jpg);">
     <div class="container">
         <div class="offer__info">
             <h2 class="g-color offer__title">Ремонт<br> по правилам</h2>
@@ -93,7 +94,7 @@
         </div>
     </div>
 </section>
-        <section class="types">
+        <section id="types" class="types">
     <div class="types__title">
         <div class="container">
             <h3 class="g-color center">Выполняем комплексный ремонт квартир, частных домов и коммерческих помещений:</h3>
@@ -126,7 +127,7 @@
         </div>
     </div>
 </section>
-        <section class="advantages">
+        <section id="advantages" class="advantages">
     <div class="container">
         <div class="advantages__text center">
             <h3 class="g-color center">Почему стоит обратиться к нам?</h3>
@@ -155,7 +156,7 @@
         <button class="advantages__btn btn center">мне подходит!</button>
     </div>
 </section>
-        <section class="works">
+        <section id="works" class="works">
     <div class="container">
         <h3 class="g-color center">Примеры работ</h3>
     </div>
@@ -213,7 +214,7 @@
     </div> 
 
 </section>
-        <section class="numbers">
+        <section id="numbers" class="numbers">
     <div class="container">
         <h3 class="g-color center">Наш проект в цифрах</h3>
         <p class="center">Статистика нашей работы за шесть лет:
@@ -309,7 +310,7 @@
     </div>
 
 </section>
-        <section class="stage">
+        <section id="stage" class="stage">
     <div class="container">
         <h3 class="g-color center">
             Как проходит ремонт, когда вы выбираете нас?
@@ -355,7 +356,7 @@
         <button class="btn block center">записаться на осмотр</button>
     </div>
 </section>
-        <section class="comments">
+        <section id="comments" class="comments">
     <div class="container">
         <h3 class="g-color center">Отзывы</h3>
         <div class="comments__wrapper">
@@ -391,7 +392,7 @@
         </div>
     </div>
 </section>
-        <section class="feedback">
+        <section id="feedback" class="feedback">
     <div class="feedback__wrapper">
         <img src="img/feedback-left.jpg" alt="">
         <div class="feedback__entry">
@@ -408,7 +409,7 @@
         <img src="img/feedback-right.jpg" alt="">
     </div>
 </section>
-        <section class="faq">
+        <section id="faq" class="faq">
     <div class="container">
         <h3 class="g-color center">
             Часто задаваемые вопросы
@@ -450,7 +451,39 @@
     </div>
 </section>
     </main>
-    <footer>Footer</footer>
+    <footer class="footer">
+    <div class="container">
+        <div class="footer__wrapper">
+            <div class="footer__address">
+                <div class="footer__phone">
+                    <div class="city">
+                        <img src="img/icons/loc.svg" alt="">
+                        г. Пермь
+                    </div>
+                    <a href="tel:+89127832247" class="phone">
+                        <img src="img/icons/phone.svg" alt=""><span>8 912 783 22 47</span>
+                    </a>
+                    <div class="vk">
+                        <a href="#"><img src="img/icons/vk.svg" alt=""></a>
+                    </div>
+                </div>
+                <img src="img/dec-footer.png" alt="">
+            </div>
+            <div class="footer__menu">
+                <ul>
+                    <li><a href="#types">Виды работ</a></li>
+                    <li><a href="#advantages">Наши преимущества</a></li>
+                    <li><a href="#works">Примеры работ</a></li>
+                    <li><a href="#stage">Процесс</a></li>
+                    <li><a href="#comments">Отзывы</a></li>
+                    <li><a href="#faq">Вопросы</a></li>
+                </ul>
+                <button class="btn footer__btn">записаться на бесплатный осмотр</button>
+                <div class="footer__roller"><img src="img/paint-roller.png" alt=""></div>
+            </div>
+        </div>
+    </div>
+</footer>
     <script src="js/app.min.js"></script>
 </body>
 

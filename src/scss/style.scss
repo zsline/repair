@@ -1,0 +1,128 @@
+@import "fonts";
+@import "root";
+@import "reset";
+@import "global";
+
+
+
+.header {
+    position: relative;
+    &__green {
+        position: relative;
+        background-color: var(--green);
+        height: 57px;
+        width: 100%;
+        color: #fff;
+        z-index: 100;
+
+    }
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__phone {
+        display: flex;
+        align-items: center;
+        line-height: 57px;
+        margin-left: auto;
+
+        img {
+            width: 24px;
+            height: 24px;
+            margin: auto 0;
+        }
+
+    }
+
+    &__nav {
+        position: absolute;
+        background-color: rgba(255, 255, 255, .6);
+        width: 100%;
+        z-index: 99;
+
+        @media (max-width:1170px) {
+            display: none;
+            background-color: rgba(255, 255, 255, 1);
+        }
+
+        & ul {
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            gap: 46px;
+            @media (max-width:1170px) {
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+                padding: 30px 0;
+                margin: 0 auto;
+            }
+            & a {
+                font-family: 'Montserrat';
+                font-size: 16px;
+                color: var(--text-color);
+                line-height: 43px;
+                text-transform: uppercase;
+                opacity: .6;
+                transition: all 0.3s;
+
+                &:hover {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+}
+
+.phone {
+    span {
+        @media (max-width:450px) {
+            display: none;
+        }
+    }
+}
+
+@import "offer";
+@import "types";
+@import "advantages";
+@import "works";
+@import "numbers";
+@import "stage";
+@import "comments";
+@import "feedback";
+
+
+
+
+
+.city,
+.phone,
+.vk {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-left: 16px;
+}
+
+.vk a {
+    display: flex;
+    align-items: center;
+}
+
+.decor {
+    position: relative;
+    z-index: 500;
+    height: 57px;
+
+    &>img {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+}

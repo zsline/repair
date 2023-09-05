@@ -1,0 +1,158 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat';
+    font-size: 24px;
+    font-weight: 500;
+    // background-color: var(--bg-color);
+
+}
+main{
+    background-image: url("../img/body-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+section{
+    clear: none;
+}
+h2 {
+    font-family: 'Montserrat';
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 64px;
+}
+
+h3 {
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 48px;
+    max-width: 1260px;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+img{
+    display: block;
+}
+
+.btn {
+    background-color: var(--accent);
+    color: #fff;
+    padding: 18px 100px;
+    font-family: Jost;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 4px;
+    height: 56px;
+    transition: all 0.3s;
+
+    &:hover {
+        background-color: var(--accent-hover);
+    }
+
+    @media (max-width:1140px) {
+        padding: 18px 60px;
+    }
+
+    @media (max-width:920px) {
+        padding: 18px 30px;
+
+    }
+
+    @media (max-width:820px) {
+        font-size: 14px;
+    }
+
+    @media (max-width:375px) {
+        padding: 18px 10px;
+        font-size: 13px;
+    }
+}
+
+.container {
+    position: relative;
+    max-width: 1280px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.y-color {
+    color: var(--accent);
+}
+
+.g-color {
+    color: var(--green);
+}
+.gy-color {
+    color: var(--grey-text);
+}
+.g-color {
+    color: var(--green);
+}
+
+.accent {
+    font-family: 'Jost';
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 600;
+    margin: 16px 0;
+
+    @media (max-width:525px) {
+        margin: 10px 0;
+    }
+}
+
+.decor {
+    @media (max-width:540px) {
+        display: none;
+    }
+}
+
+.nav-menu {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+    display: none;
+    line-height: 56px;
+
+    @media (max-width:1170px) {
+        display: flex;
+    }
+}
+
+.mobil-tel {
+    display: none;
+
+    @media (max-width:1170px) {
+        display: block;
+    }
+
+}
+
+.mobil-tel>a {
+    color: var(--green) !important;
+    font-weight: 700;
+}
+
+.header__nav.active {
+    display: block;
+}
+
+.center {
+    text-align: center;
+    margin: 0 auto;
+}
+.block{
+    display: block;
+}

@@ -1,0 +1,35 @@
+.stage {
+    padding: 60px 0;
+    background-color: rgba($color: #fff, $alpha: .6);
+    &__wrapper{
+        display: grid;
+        grid-auto-flow: column;
+        grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+        gap: 30px;
+        margin: 90px 0 60px;
+    }
+    &__item {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        &-number {
+            width: 100px;
+            height: 100px;
+            background-image: url(../img/icons/marker-2.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Jost;
+            font-size: 36px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 42px;
+        }
+        p{
+            flex: 1 1;
+        }
+    }
+}

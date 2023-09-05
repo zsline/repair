@@ -1,0 +1,43 @@
+.comments{
+    padding: 100px 0;
+    &__wrapper{
+        position: relative;
+        padding-bottom: 120px;
+    }
+    &__slider{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 80px;
+        &-item{
+            width: 400px;
+            height: 400px;
+            img{
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+        &-nav {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            gap: 100px;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 0;
+        }
+
+        &-btns {
+            display: flex;
+            align-items: center;
+            gap: 110px;
+        }
+
+        &-counter {
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 32px;
+            display: flex;
+        }
+    }
+}

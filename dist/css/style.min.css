@@ -918,6 +918,37 @@ img {
   display: flex;
 }
 
+.feedback {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+.feedback__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.feedback__wrapper img {
+  width: 417px;
+  height: 293px;
+}
+.feedback__entry {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.feedback__entry-title {
+  font-family: Montserrat;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px;
+}
+.feedback__entry span {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+}
+
 .city,
 .phone,
 .vk {

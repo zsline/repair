@@ -869,6 +869,9 @@ img {
   font-weight: 700;
   line-height: 42px;
 }
+.stage__item-number span {
+  transform: translateX(4px);
+}
 .stage__item p {
   flex: 1 1;
 }

@@ -7,11 +7,20 @@
         grid-template: repeat(3, 1fr) / repeat(2, 1fr);
         gap: 30px;
         margin: 90px 0 60px;
+        @media (max-width:1440px) {
+        grid-template: repeat(6, 1fr) / repeat(1, 1fr);
+        }
+        @media (max-width:844px) {
+        gap: 5px;
+        }
     }
     &__item {
         display: flex;
         align-items: center;
         gap: 40px;
+        @media (max-width:610px) {
+            gap: 15px;
+            }
         &-number {
             width: 100px;
             height: 100px;
@@ -32,7 +41,12 @@
             }
         }
         p{
-            flex: 1 1;
+            flex: 1 0;
+        }
+    }
+    &__btn{
+        @media (max-width: 540px) {
+            width: 100%;
         }
     }
 }

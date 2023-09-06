@@ -4,7 +4,10 @@
     background-color: rgba($color: #fff, $alpha: .6);
     &__slider {
         width: 100%;
+        height: auto;
         margin: 90px auto 0;
+        display: flex;
+        overflow: hidden;
     }
 
     &__slide {

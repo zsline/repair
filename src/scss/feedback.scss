@@ -6,9 +6,19 @@
         justify-content: space-between;
         align-items: center;
 
+        @media (max-width:1440px) {
+            justify-content: center;
+            height: 255px;
+        }
+
         img {
-            width: 417px;
+            width: 20vw;
             height: 293px;
+            object-fit: cover;
+
+            @media (max-width:1440px) {
+                display: none;
+            }
         }
     }
 
@@ -16,6 +26,17 @@
         display: flex;
         align-items: center;
         gap: 40px;
+
+        @media (max-width:740px) {
+            flex-direction: column;
+            padding: 0 15px;
+        }
+
+        &-btn {
+            @media (max-width: 540px) {
+                width: 100%;
+            }
+        }
 
         &-title {
             font-family: Montserrat;
@@ -30,6 +51,12 @@
             font-style: normal;
             font-weight: 500;
             line-height: 24px;
+        }
+    }
+
+    &__btn {
+        @media (max-width: 540px) {
+            width: 100%;
         }
     }
 }

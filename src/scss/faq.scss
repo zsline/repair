@@ -1,7 +1,14 @@
 .faq {
     padding: 160px 0;
+    @media (max-width: 760px) {
+        padding: 50px 0;
+
+    }
     &__wrapper{
         margin-top: 80px;
+        @media (max-width: 760px) {
+            margin-top: 40px;
+        }
     }
     &__item {
         padding: 0 20px;

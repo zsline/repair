@@ -103,13 +103,27 @@
 .footer {
     background-color: var(--green);
     overflow: hidden;
+    @media (max-width: 670px) {
+        padding-bottom: 60px;
+    }
     &__wrapper {
         display: flex;
         gap: 110px;
+        @media (max-width: 670px) {
+            flex-direction: column;
+            padding: 0 60px;
+            gap: 30px;
+        }
+        @media (max-width: 437px) {
+            padding: 0 10px;
+        }
     }
 
     &__address {
         position: relative;
+        @media (max-width: 670px) {
+            width: 100%;
+        }
 
         &>img {
             position: absolute;
@@ -132,6 +146,29 @@
         font-weight: 500;
         line-height: 24px;
         color: #fff;
+        @media (max-width: 670px) {
+            width: 100%;
+            align-items: end;
+            padding: 30px;
+        }
+        @media (max-width: 500px) {
+            align-items: center;
+            padding-top: 120px;
+        }
+        @media (max-width: 450px) {
+            padding: 180px 15px 30px;
+        }
+        .phone span[data-footer]{
+            @media (max-width: 450px) {
+                display: block;
+            }
+        }
+
+    }
+    &__img{
+        @media (max-width: 425px) {
+            width: 100%;
+        }
     }
 
     &__menu {
@@ -143,21 +180,33 @@
         line-height: 20px;
         text-transform: uppercase;
         color: #fff;
+        @media (max-width: 670px) {
+            padding: 30px 0;
+        }
         ul {
             display: grid;
             grid-auto-flow: column;
             grid-template: repeat(2, 1fr) / repeat(3, 1fr);
             gap: 24px 110px;
             margin-bottom: 35px;
+            @media (max-width: 860px) {
+                grid-template: repeat(6, 1fr) / repeat(1, 1fr);
+
+            }
         }
     }
     &__btn{
         width: 100%;
+        padding: 24px 10px;
     }
     &__roller{
         position: absolute;
         right: -8px;
         bottom: -20px;
+        z-index: 0;
+        @media (max-width: 670px) {
+            bottom: -70px;
+        }
     }
 }
 
@@ -197,5 +246,20 @@
     height: 60px;
     bottom: 80px;
     right: 80px;
+    backdrop-filter: blur(8px);
     z-index: 1000;
+    @media (max-width: 1280px) {
+        bottom: 10px;
+        right: 10px;
+    }
+    @media (max-width: 540px) {
+        bottom: 10px;
+        right: 10px;
+        width: 40px;
+        height: 40px;
+    }
+    img{
+        width: 100%;
+        object-fit: cover;
+    }
 }
